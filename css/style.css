@@ -1,0 +1,129 @@
+/* 🌟 Style général */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #4a90e2, #8e44ad);
+  color: white;
+  text-align: center;
+}
+
+/* 🔹 Header */
+header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* 🔹 Sections */
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #FFD700;
+}
+
+/* 📷 Image */
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🚀 Bouton */
+.btn {
+  display: inline-block;
+  background: #FFD700;
+  color: #222;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f1c40f;
+  transform: scale(1.1);
+}
+
+/* 🎮 Fonctionnalités */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature i {
+  font-size: 2em;
+  color: #FFD700;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.instructions {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.instructions h3 {
+  color: #FFD700;
+  font-size: 1.5em;
+}
+
+.instructions ol {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 1.1em;
+}
+
+.instructions li {
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #FFD700;
+  color: #222;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f1c40f;
+  transform: scale(1.1);
+}
