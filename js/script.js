@@ -26,4 +26,27 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 300);
     }
   });
+
+  let downloadBtn = document.getElementById("download-apk");
+
+  if (downloadBtn) {
+    downloadBtn.addEventListener("click", function (event) {
+      event.preventDefault(); // Empêche le comportement par défaut temporairement
+
+      let apkUrl = downloadBtn.getAttribute("href");
+
+      // Démarrer le téléchargement en créant un lien temporaire
+      let a = document.createElement("a");
+      a.href = apkUrl;
+      a.download = "";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+      // Rediriger immédiatement après le téléchargement
+      setTimeout(function () {
+        window.location.href = "downloading.html";
+      }, 1000); // Attendre 1 seconde pour assurer le déclenchement du téléchargement
+    });
+  }
 });

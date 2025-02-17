@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autorisations nécessaires - Hidden Picture</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="icon.png">
+  <link rel="shortcut icon" href="icon.png">
+</head>
+<body>
+
+<header>
+  <h1>🔑 Avant de lancer Hidden Picture</h1>
+  <p>Avant de lancer <strong>Hidden Picture</strong>, assurez-vous d’accorder les autorisations suivantes pour un bon fonctionnement.</p>
+</header>
+
+<section>
+  <h2>📸 Autoriser l’accès à l’appareil photo</h2>
+  <ol>
+    <li>Ouvrez <strong>Paramètres</strong> ⚙️</li>
+    <li>Allez dans <strong>Applications</strong> 📱</li>
+    <li>Recherchez <strong>Hidden Picture</strong> et appuyez dessus</li>
+    <li>Allez dans <strong>Autorisations</strong> 🔓</li>
+    <li>Activez <strong>Appareil photo</strong> 📸</li>
+  </ol>
+  <div class="image-container">
+    <img src="img/ParametesApp.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+    <img src="img/AppHiddenPicture.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+    <img src="img/PhotosVideos.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+    <img src="img/AutoriserPhotosVideos.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+  </div>
+</section>
+
+<section>
+  <h2>📍 Autoriser l’accès à la localisation</h2>
+  <ol>
+    <li>Allez dans <strong>Paramètres</strong> ⚙️</li>
+    <li>Ouvrez <strong>Applications</strong> 📱 puis sélectionnez <strong>Hidden Picture</strong></li>
+    <li>Allez dans <strong>Autorisations</strong> 🔓</li>
+    <li>Activez <strong>Localisation</strong> 📍 et sélectionnez <strong>Autoriser tout le temps</strong></li>
+  </ol>
+  <p>⚠️ Cette autorisation est essentielle pour suivre les joueurs sur la carte.</p>
+  <div class="image-container">
+    <img src="img/ParametesApp.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+    <img src="img/AppHiddenPicture.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+    <img src="img/Position.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+    <img src="img/AutoriserPosition.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+  </div>
+</section>
+
+<section>
+  <h2>🎧 Autoriser l’accès à la musique et l'audio</h2>
+  <ol>
+    <li>Ouvrez <strong>Paramètres</strong> ⚙️</li>
+    <li>Allez dans <strong>Applications</strong> 📱 et trouvez <strong>Hidden Picture</strong></li>
+    <li>Allez dans <strong>Autorisations</strong> 🔓</li>
+    <li>Activez <strong>Stockage</strong> 📂</li>
+  </ol>
+  <p>Cette autorisation est nécessaire pour enregistrer les photos prises pendant le jeu.</p>
+  <div class="image-container">
+    <img src="img/ParametesApp.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+    <img src="img/AppHiddenPicture.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+    <img src="img/MusiqueAudio.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+    <img src="img/AutoriserMusiqueAudio.jpg" alt="Autoriser l'appareil photo" class="zoomable">
+  </div>
+</section>
+
+<section>
+  <h2>🎯 Vous êtes prêt !</h2>
+  <p>Si toutes les autorisations sont activées, vous pouvez profiter de <strong>Hidden Picture</strong> sans problème !</p>
+  <a href="index.html" class="btn">Retour à l'accueil</a>
+</section>
+
+<footer>
+  <a href="index.html">🏠 Retour à l'accueil</a> | <a href="cluf.html">📜 CLUF</a>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Vérifie si l'URL contient ?download=true
+    let params = new URLSearchParams(window.location.search);
+    if (params.get("download") === "true") {
+      // Crée un lien temporaire et télécharge l'APK
+      let apkUrl = "apk/com.olivesigne.hiddenpicture.apk";
+      let a = document.createElement("a");
+      a.href = apkUrl;
+      a.download = "";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  });
+</script>
+
+</body>
+</html>

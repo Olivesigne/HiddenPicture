@@ -197,3 +197,14 @@ footer {
   color: white;
   cursor: pointer;
 }
+
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+li {
+  text-align: left;
+}
